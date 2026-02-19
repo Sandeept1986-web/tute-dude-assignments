@@ -5,7 +5,7 @@ import json
 app = Flask(__name__)
 
 # 🔹 Replace with your MongoDB Atlas connection string
-MONGO_URI = "mongodb+srv://thontlasandeep28_db_user:hxuFN5i2aWZsUvln@cluster-app.p0plxgf.mongodb.net/"
+MONGO_URI = "mongodb+srv://{username}:{passwrd}@cluster-app.p0plxgf.mongodb.net/"
 
 client = MongoClient(MONGO_URI)
 db = client["flaskdb"]
